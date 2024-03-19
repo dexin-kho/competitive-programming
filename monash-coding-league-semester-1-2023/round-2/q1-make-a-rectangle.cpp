@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define REP(i, a, b) for (int i = a; i < b; i++)
-
-void solve(int l1, int l2, int l3) {
+void solve() {
+    int l1, l2, l3;
+    cin >> l1 >> l2 >> l3;
+    
     int cutStick;
-
     if (l1 == l2) cutStick = l3;
     else if (l1 == l3) cutStick = l2;
     else if (l2 == l3) cutStick = l1;
@@ -36,10 +36,6 @@ void solve(int l1, int l2, int l3) {
 int main() {
     int t;
     cin >> t;
-
-    int l1, l2, l3;
-    REP(i, 0, t) {
-        cin >> l1 >> l2 >> l3;
-        solve(l1, l2, l3);
-    }
+    while (t--)
+        solve();
 }
