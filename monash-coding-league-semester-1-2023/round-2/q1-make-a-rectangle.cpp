@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define REP(i, a, b) for (int i = a; i < b; i++)
+
 void solve(int l1, int l2, int l3) {
     int cutStick;
 
@@ -36,7 +38,7 @@ int main() {
     cin >> t;
 
     int l1, l2, l3;
-    for (int i = 0; i < t; i++) {
+    REP(i, 0, t) {
         cin >> l1 >> l2 >> l3;
         solve(l1, l2, l3);
     }
