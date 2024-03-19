@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+
+void solve() {
+    ll n, m, k;
+    cin >> n >> m >> k;
+
+    cout << max((n * (m + n * m) / 2) - k, 0LL);
+}
+
+int main() {
+    int t = 1;
+    while (t--)
+        solve();
+}
